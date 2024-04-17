@@ -33,7 +33,7 @@ git clone https://github.com/Teradata/ai-unlimited
 
 ## Provide environment variables
 
-1. Copy these environment variables from your [CSP](/docs/glossary.md#glo-csp) console or use the CLI. 
+1. Copy these environment variables from your [CSP](../../glossary.md#glo-csp) console or use the CLI. 
 
 	<Tabs>
 		<TabItem value="aws" label="AWS" default>
@@ -96,5 +96,5 @@ When AI Unlimited is ready, you can access it at `http://localhost:3000`.
 
 When JupyterLab is ready, you can access it at `http://localhost:8888`, and enter the token. 
 
-After you [set up AI Unlimited](/docs/install-ai-unlimited/quickstart/docker-setup-b.md), you'll be able to create a project in JupyterLab. 
+After you [set up AI Unlimited](docker-setup-b.md), you'll be able to create a project in JupyterLab. 
 

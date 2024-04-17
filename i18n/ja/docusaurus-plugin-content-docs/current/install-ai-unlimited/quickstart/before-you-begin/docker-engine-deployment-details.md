@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 
 ***A version of this for the old UI and new UI?***
   
-When you [set up AI Unlimited](/docs/install-ai-unlimited/quickstart/docker-setup-b.md), you'll provide details for deploying the engine on AWS or Azure. 
+When you [set up AI Unlimited](../docker-setup-b.md), you'll provide details for deploying the engine on AWS or Azure. 
 
 If you want to, copy this template and send it to your admin to get the deployment details ahead of time. Or, get them from the AWS or Azure console.
 <Tabs>

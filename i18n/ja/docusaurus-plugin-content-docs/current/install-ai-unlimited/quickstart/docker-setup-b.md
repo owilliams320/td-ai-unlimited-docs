@@ -7,9 +7,9 @@ sidebar_position: 4
 ---
 
 # AI Unlimited を設定する
-
+<!-- 
 import MyPartial from '/docs/_partials/_setup.mdx';
 
 <MyPartial />
 
-
+-->

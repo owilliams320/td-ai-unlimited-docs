@@ -17,13 +17,13 @@ Before you start, make sure you have all the necessary details to update the clo
 
 Access AI Unlimited setup:
 
-- **http://localhost:3000** (if you are using the [QuickStart](/docs/install-ai-unlimited/quickstart/index.md))
+- **http://localhost:3000** (if you are using the [QuickStart](index.md))
 
-- **http://[ip_or_hostname]:[port]** (for a [full](/docs/install-ai-unlimited/production/index.md) installation)
+- **http://[ip_or_hostname]:[port]** (for a [full](../production/index.md) installation)
 
 Are you an AI Unlimited user or administrator? Choose your path: ***This topic (which will be for both the QS and the full install) is meant only for the user doing the installation. For the QuickStart, that user is also a general user. For the full installation, that is less likely to be the case. But either way, it's in the installation flow--so should not descibe the other uses. There will be other topics for an admin to change settings under "manage" in the TOC, and for a general user to get their API key (under "explore and analyze data" in the TOC.***
 
-- If you're an AI Unlimited user, AI Unlimited is set up and ready to use. Authorize using your Git provider credentials. This authorizes the AI Unlimited to authenticate the user and access your Git repo. Copy the API Key [Glossary] from your **Profile** page and then proceed to [running your first workload](/docs/explore-and-analyze-data/example-projects.md) on AI Unlimited.
+- If you're an AI Unlimited user, AI Unlimited is set up and ready to use. Authorize using your Git provider credentials. This authorizes the AI Unlimited to authenticate the user and access your Git repo. Copy the API Key [Glossary] from your **Profile** page and then proceed to [running your first workload](../../explore-and-analyze-data/example-projects.md) on AI Unlimited.
 
 - If you're an AI Unlimited administrator, complete the setup. To learn more about specific fields, click a section below. 
 
@@ -44,7 +44,7 @@ Are you an AI Unlimited user or administrator? Choose your path: ***This topic (
 
 * **Engine IP network type**: The type of network assigned to an engine instance that would allow AI Unlimited to communicate with the engine. Select **Private** if you're deploying the engine in the same VPC as AI Unlimited. Select **Public** if AI Unlimited is running on a local container.
 
-* **Use TLS**: Indicates if [Transport Layer Security (TLS)](/docs/glossary.md#glo-tls) support is enabled to secure communication to AI Unlimited. If you use a self-hosted AI Unlimited instance without a load balancer, Teradata recommends setting this option to **True** and uploading or generating TLS certificates. For enterprise users employing a load balancer, set this option to **False**, as the load balancer manages TLS certificates.
+* **Use TLS**: Indicates if [Transport Layer Security (TLS)](../../glossary.md#glo-tls) support is enabled to secure communication to AI Unlimited. If you use a self-hosted AI Unlimited instance without a load balancer, Teradata recommends setting this option to **True** and uploading or generating TLS certificates. For enterprise users employing a load balancer, set this option to **False**, as the load balancer manages TLS certificates.
     
     If you have a certificate issued by a trusted Certificate Authority (CA), you can provide it and its key. You'll be responsible for managing the certificate lifecycle, including renewal and validation. If you have specific requirements or need more control over your certificates, bringing your own is a good option. You can also select **GENERATE TLS** to use a Teradata system-generated certificate. It automatically renews before it expires.
 
@@ -64,7 +64,7 @@ You can modify these parameters directly from the Jupyter notebook while connect
 
 - **Default region**: The region where you want to deploy the engine. Teradata recommends choosing the region closest to your primary work location.
 - **Default subnet**: The subnet that provides the engine instance with a route to an internet gateway. If you don't specify a subnet, the engine is automatically associated with the default subnet.
-- **Default IAM role**: The default IAM identity that provides the required permissions to deploy the engine instance. When a default IAM role is assigned to a user or resource, the user or resource automatically assumes the role and gains the permissions granted to the role. If AI Unlimited creates the [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html), it creates it for the AWS [cluster](/docs/glossary.md#glo-cluster) that deploys the engine&mdash;each time you deploy the engine. If your organization creates the role, it must be broad enough to include all the clusters that might deploy the engine.
+- **Default IAM role**: The default IAM identity that provides the required permissions to deploy the engine instance. When a default IAM role is assigned to a user or resource, the user or resource automatically assumes the role and gains the permissions granted to the role. If AI Unlimited creates the [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html), it creates it for the AWS [cluster](../../glossary.md#glo-cluster) that deploys the engine&mdash;each time you deploy the engine. If your organization creates the role, it must be broad enough to include all the clusters that might deploy the engine.
 - **Resource tags**: The key-value pair applied to a resource to hold metadata about that resource. With a resource tag, you can quickly identify, organize, and manage the AI Unlimited resources you use in your environment.
 - **Default CIDRs**: The list of Classless Inter-Domain Routing (CIDR) network addresses that can be allocated to the engine. Use CIDR to allocate IP addresses flexibly and efficiently in your network. If you don't specify a CIDR, the engine is automatically associated with the default CIDR.
 - **Default security groups**: The list of security groups for the VPC in each region. Security group is a virtual firewall that contains rules to monitor and filter the incoming and outgoing traffic for the VPC in each region. If you don't specify a security group, the engine is automatically associated with the default security group for the VPC. If you're deploying AI Unlimited using the CloudFormation template or ARM template, make sure the default security group is the same as the one in the template to ensures AI Unlimited can communicate with the AI Unlimited engine.

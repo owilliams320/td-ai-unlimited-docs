@@ -1,0 +1,9 @@
+JupyterLab の CloudFormation テンプレートは、複製した AI Unlimited GitHub リポジトリにあります。
+
+`/deployments/aws/templates/jupyter/`
+
+[ロード バランサー](/docs/glossary.md#glo-load-balancer) を使用するかどうか、およびその種類に基づいてテンプレートを選択します。
+
+    - `jupyter-alb.yaml`&mdash;Hosts JupyterLab behind an [application load balancer](/docs/glossary.md#glo-application-load-balancer)
+    - `jupyter-with-nlb.yaml`&mdash;Hosts JupyterLab behind a [network load balancer](/docs/glossary.md#glo-network-load-balancer)
+    - `jupyter-without-lb.yaml`&mdash;No load balancer

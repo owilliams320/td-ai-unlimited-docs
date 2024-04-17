@@ -13,7 +13,7 @@ Are you ready to scale to your team? Complete the full installation.
 
 This puts the AI Unlimited manager on a server instance on your cloud service provider (CSP). 
 
-For your [JupyterLab installation](/docs/install-ai-unlimited/production/AWS/install-jupyter/index.md), you have these options:
+For your [JupyterLab installation](AWS/install-jupyter/index.md), you have these options:
 
 - Add the AI Unlimited Jupyter Kernel to a previous installation of JupyterLab.
 - Install JupyterLab with the AI Unlimited Jupyter Kernel on the same CSP with AI Unlimited, on a separate instance.

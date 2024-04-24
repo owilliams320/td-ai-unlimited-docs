@@ -81,6 +81,12 @@ You connect your notebook to the AI/ML engine on AWS or Azure, and connect the e
 You might like to [get deployment details]***(link to them in "Other resources")***, that you'll need when you deploy the cloud template, ahead of time.
 :::
 
+:::note
+With AI Unlimited you can collaborate on projects with other users. 
+
+If you prefer a simpler, single-user approach, try the [QuickStart](/docs/advanced/quickstart) which runs the manager and JupyterLab in Docker containers on your computer.
+:::
+
 
 ## Subscribe
 
@@ -88,11 +94,6 @@ Subscribe to AI Unlimited on the [AWS Marketplace] ***(link to listing)*** or [A
 
 Then return to this documentation site to deploy the AI Unlimited manager.
 
-:::note
-With AI Unlimited you can collaborate on projects with other users. 
-
-If you prefer a simpler, single-user approach, try the [QuickStart](/docs/advanced/quickstart) which runs the manager and JupyterLab in Docker containers on your computer.
-:::
 
 
 
